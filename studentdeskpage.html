@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+            .checkboxes label {
+                display: block;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            .checkboxes input {
+                vertical-align: middle;
+            }
+            .checkboxes label span {
+                vertical-align: middle;
+            }
+
+        </style>
+    </head>
+    <body bgcolor="lightblue">
+        <form>
+            <center>
+                <b>First Name:</b>
+                <input type="text" id="name"/><br/><br/>
+                <b>Last Name:</b>
+                <input type="text" id="name"/><br/><br/>
+                <b>password:</b>
+                <input type="password" id="password"/><br/><br/>
+                <b>Gender:</b>
+                <input type="radio" name="r1"/>Male<br/><br/>
+                <input type="radio" name="r2"/>Female<br/><br/>
+                <b>Semester:</b>
+                <label="Semester"/>
+                <select name="Semester" id="Semester">
+                    <option value="1 Sem">1 Sem</option>
+                    <option value="2 Sem">2 Sem</option>
+                    <option value="3 Sem">3 Sem</option>
+                    <option value="4 Sem">4 Sem</option>
+                </select><br/><br/><br/>
+                <div class="checkboxes"><b>Opinion:</b>
+                <label><input type="checkbox"><span>Very Good</span></label>
+                <label><input type="checkbox"><span>Good</span></label>
+                <label><input type="checkbox"><span>Average</span></label>
+                <label><input type="checkbox"><span>Bad</span></label>
+            </div><br/>
+            <label for="remarks">
+                <b>Remarks:</b>
+            </label><br/>
+            <textarea name="test" rows="3" cols="40"></textarea><br/><br/>
+            <a href="submit.html">
+                <input type="button" value="submit"/></a>
+                <input type="reset"/>
+        
+            </center>
+        </form>        
+    </body>
+</html>

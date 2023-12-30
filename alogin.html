@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>ADMIN LOGIN</title>
+        <link re="stylesheet">
+    <style type=""text/css">
+    * {
+        padding:0;
+        margin:0;
+    }
+    body {
+        background-color: aliceblue;
+    }
+    .container {
+        position: relative;
+        margin-top: 100px;
+        width: 450px;
+        height: auto;
+        background: #dedede;
+        border-radius: 5px;
+    }
+    .label {
+        padding: 20px 130px;
+        font-size: 35px;
+        font-weight: bold;
+        color: #130f40;
+    }
+    .login_form {
+        padding: 20px 40px;
+    }
+    .login_form.font {
+        font-size: 18px;
+        color: #130f40;
+        margin: 5px 0;
+    }
+    .login_form.input {
+        height: 40px;
+        width: 350px;
+        padding: 0 5px;
+        font-size: 18px;
+        outline: none;
+        border: 1px solid silver;
+    }
+    .login_form.password {
+        margin-top: 30px;
+    }
+    .login_form.login {
+        margin: 45px 0 30px 0;
+        height: 45px;
+        width: 365px;
+        font-size: 20px;
+    }
+    .login_form login:hover {
+        background: #151c6a;
+    }
+    .login_form #name_error,
+    .login_form #password_error {
+        margin-top: 5px;
+        width: 345px;
+        font-size: 18px;
+        color: #C62828";
+        
+    }
+    </style>    
+    <script type="text/javascript">
+        function validation() {
+            var dom=document.getElementById("name");
+            var name=dom.value;
+            var dom1=document.getElementById("password");
+            var password=dom1.value;
+            var match=name.search(/^[A-Z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z][a-z]$/);
+            var match1=password.search(/^[0-9][0-9][0-9][0-9]$/);
+            if(match!=-1&&match1!=-1)
+            alert("entered name and password is valid"); 
+        else 
+        alert("entered name and password is invalid");
+
+        }
+    </script></head>
+    <body>
+        <center>
+            <div class="container">
+                <h1 class="label">ADMIN LOGIN</h1>
+                <form class="login_form" method="post">
+                    <div class="font">
+                        <b>NAME:</b><input type="text" id="name"/></div>
+                    <div id="name_error">Please fill up your Name</div>
+                    <div class="password">
+                    <b>PASSWORD:</b><input type="password" id="password"/>  </div>
+                    <div id="password_error">Please fill up your password</div>
+                    <a href="activity.html"/>
+                    <div class="login">
+                        <input type="button" onclick="validation()"/>Login
+                    </div>          
+                    
+                </form>
+            </div>
+        </center>
+    </body>
+</html>
